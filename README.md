@@ -1,2 +1,0 @@
-# ricojamesportfolio
-My Portfolio Repository
