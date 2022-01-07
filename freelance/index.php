@@ -3,6 +3,28 @@
 <html lang="en" class="" style="height: auto;">
 <?php require_once('inc/header.php') ?>
   <body>
+  <Style>
+
+   header {
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   background: #161415 url("profile_asset/images/BG8.gif") no-repeat top center;
+   background-size: cover !important;
+  -webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+    }
+
+    /* vertically center banner section */
+    header:before {
+       content: '';
+       display: inline-block;
+       vertical-align: middle;
+       height: 100%;
+    }
+  </style>
    <!-- Header ================================================== -->
    <header id="home">
       <nav id="nav-wrap">
