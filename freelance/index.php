@@ -33,7 +33,8 @@
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#about">About Me</a></li>
+            <li><a class="smoothscroll" href="#services">Offer</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio"> Projects Examples</a></li>
          </ul> <!-- end #nav -->
@@ -95,6 +96,7 @@ while($row = $c_qry->fetch_assoc()){
                   <span><a>Email Add: </a><a><?php echo $contact['email'] ?></a></span>
              </p>
                </div>
+               <!--
                  <div class="columns ">
                  </br></br>
                   <h2>Types of services:</h2>
@@ -108,7 +110,7 @@ while($row = $c_qry->fetch_assoc()){
                   <span><h2><a>- All types of Software Automation Projects.</a></span><br>
                   <span><h2><a>- All types of Software and Hardware Thesis Projects.</a></span><br>
              </p>
-               </div>
+               </div> -->
                <div class="columns download">
                   <p>
                      <!-- <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a> -->
@@ -119,23 +121,150 @@ while($row = $c_qry->fetch_assoc()){
       </div>
    </section> <!-- About Section End-->
 
+<!-- Offer Section
+   ================================================== -->
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-      <!-- offers -->
-  <section id="offers">
-     <div class="row skill">
-         <div class="three columns header-col">
-            <h1><span>Offer Services</span></h1>
+/* Float four columns side by side */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row1 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+   <section id="services">
+   <section id="about">
+      <div class="row">
+         <div class="three columns">
+            <img class="profile-pic"  src="profile_asset/images/services.jpg" alt="" />
          </div>
          <div class="nine columns main-col">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-      </div> 
-      </div> 
-   </section>
+            <center><h2>OFFER SERVICES</h2></center>
+           
+           <div class="row1">
+            <div class="column1">
+              <div class="card1">
+                <h3>Software Application Development.</h3>
+                <p>Free maintenance.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+
+              <div class="column1">
+              <div class="card1">
+                <h3>Mobile Application Development.</h3>
+                <p>Android and IOS.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+            </div>
+
+            <br></br>
+
+             <div class="row1">
+            <div class="column1">
+              <div class="card1">
+                <h3>Website Page Development.</h3>
+                <p>With Admin page.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+
+              <div class="column1">
+              <div class="card1">
+                <h3>Internet Of Things Development.</h3>
+                <p>Free repair charge.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+            </div>
+
+             <br></br>
+
+             <div class="row1">
+            <div class="column1">
+              <div class="card1">
+                <h3>Hardware and Software Development.</h3>
+                <p>Free repair charge and maintenance.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+
+              <div class="column1">
+              <div class="card1">
+                <h3>All types of System Applications.</h3>
+                <p>Free maintenance.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+            </div>
+
+               <br></br>
+
+             <div class="row1">
+            <div class="column1">
+              <div class="card1">
+                <h3>All types of Automation Projects.</h3>
+                <p>Free repair charge and maintenance.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+
+              <div class="column1">
+              <div class="card1">
+                <h3>All types of IT Related Thesis Projects.</h3>
+                <p>Free project document.</p>
+                <p>Free 2 Days Training</p>
+                <p>Free 24/7 Live Chat Support</p>
+              </div>
+            </div>
+            </div>
+
+         </div> <!-- end .main-col -->
+      </div>
+   </section> <!-- About Section End-->
+   </section> <!-- About Section End-->
 
 
    <!-- Resume Section
