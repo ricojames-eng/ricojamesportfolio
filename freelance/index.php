@@ -121,7 +121,7 @@ while($row = $c_qry->fetch_assoc()){
 
 
 
-      <!-- Skills -->
+      <!-- offers -->
   <section id="offers">
      <div class="row skill">
          <div class="three columns header-col">
@@ -136,6 +136,7 @@ while($row = $c_qry->fetch_assoc()){
       </div> 
       </div> 
    </section>
+
 
    <!-- Resume Section
    ================================================== -->
