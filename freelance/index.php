@@ -119,6 +119,24 @@ while($row = $c_qry->fetch_assoc()){
       </div>
    </section> <!-- About Section End-->
 
+
+
+      <!-- Skills -->
+  <section id="offers">
+     <div class="row skill">
+         <div class="three columns header-col">
+            <h1><span>Offer Services</span></h1>
+         </div>
+         <div class="nine columns main-col">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.
+            </p>
+      </div> 
+      </div> 
+   </section>
+
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
@@ -167,41 +185,6 @@ while($row = $c_qry->fetch_assoc()){
           <?php endwhile; ?>
          </div> <!-- main-col end -->
       </div> <!-- End Work -->
-
-
-      <!-- Skills -->
-     <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-
-        <div class="bars">
-
-           <ul class="skills">
-             <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-            <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-            <li><span class="bar-expand css"></span><em>CSS</em></li>
-            <li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-          </ul>
-
-        </div>
-
-      </div> 
-
-      </div> 
-
-   </section>
 
 
    <!-- Portfolio Section
