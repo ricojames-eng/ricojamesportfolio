@@ -119,58 +119,35 @@ while($row = $c_qry->fetch_assoc()){
       </div>
    </section> <!-- About Section End-->
 
- <!-- About Section
-   ================================================== -->
-   <section id="offers">
-      <div class="row">
-
-      </div>
-   </section> <!-- About Section End-->
-
-
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
+      <!-- Education -->
       <div class="row education">
-
          <div class="three columns header-col">
             <h1><span>Education</span></h1>
          </div>
-
          <div class="nine columns main-col">
           <?php 
           $e_qry = $conn->query("SELECT * FROM education order by year desc, month desc");
           while($row = $e_qry->fetch_assoc()):
           ?>
             <div class="row item">
-
                <div class="twelve columns">
-
                   <h3><?php echo $row['school'] ?></h3>
                   <p class="info"><?php echo $row['degree'] ?> <span>&bull;</span> <em class="date"><?php echo $row['month'].' '.$row['year'] ?></em></p>
-
                   <p>
                   <?php echo stripslashes(html_entity_decode($row['description'])) ?>
                   </p>
-
                </div>
-
             </div> <!-- item end -->
-          <?php endwhile; ?>
-           
-
+          <?php endwhile; ?>        
          </div> <!-- main-col end -->
-
       </div> <!-- End Education -->
 
 
-      <!-- Work
-      ----------------------------------------------- -->
+      <!-- Work -->
       <div class="row work">
-
          <div class="three columns header-col">
             <h1><span>Work</span></h1>
          </div>
@@ -181,27 +158,19 @@ while($row = $c_qry->fetch_assoc()){
           while($row = $w_qry->fetch_assoc()):
           ?>
             <div class="row item">
-
                <div class="twelve columns">
-
                   <h3><?php echo $row['company'] ?></h3>
-                  <p class="info"><?php echo $row['position'] ?> <span>&bull;</span> <em class="date"><?php echo str_replace("_"," ",$row['started']) ?> - <?php echo str_replace("_"," ",$row['ended']) ?></em></p>
-
-                  
+                  <p class="info"><?php echo $row['position'] ?> <span>&bull;</span> <em class="date"><?php echo str_replace("_"," ",$row['started']) ?> - <?php echo str_replace("_"," ",$row['ended']) ?></em></p>               
                   <p><?php echo stripslashes(html_entity_decode($row['description'])) ?></p>
-
                </div>
-
             </div> <!-- item end -->
           <?php endwhile; ?>
          </div> <!-- main-col end -->
-
       </div> <!-- End Work -->
 
 
-      <!-- Skills
-      ----------------------------------------------- -->
-      <!-- <div class="row skill">
+      <!-- Skills -->
+     <div class="row skill">
 
          <div class="three columns header-col">
             <h1><span>Skills</span></h1>
@@ -233,7 +202,7 @@ while($row = $c_qry->fetch_assoc()){
       </div> 
 
    </section>
- -->
+
 
    <!-- Portfolio Section
    ================================================== -->
@@ -273,88 +242,23 @@ while($row = $c_qry->fetch_assoc()){
             ?>
 
          <!-- Modal Popup -->
-
          <div id="modal-<?php echo $row['id'] ?>" class="popup-modal mfp-hide">
-
           <img class="scale-with-grid" src="<?php echo validate_image($row['banner']) ?>" alt="" />
-
           <div class="description-box">
             <h4><?php echo $row['name'] ?></h4>
             <p><?php echo stripslashes(html_entity_decode($row['description'])) ?></p>
                <span class="categories"><i class="fa fa-tag"></i><?php echo $row['client'] ?></span>
           </div>
-
             <div class="link-box">
                <!-- <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a> -->
              <a class="popup-modal-dismiss">Close</a>
             </div>
-
         </div><!-- modal-01 End -->
-
       <?php endwhile; ?>
-
-
       </div> <!-- row End -->
-
    </section> <!-- Portfolio Section End-->
 
 
-
-
-   <!-- Testimonials Section
-   ================================================== 
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-                     <!--
-                     <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-                     <!--
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-               <!--
-            </div> <!-- div.flex-container ends -->
-            <!--
-         </div> <!-- row ends -->
-          <!--
-       </div>  <!-- text-container ends -->
-        <!--
-   </section> <!-- Testimonials Section End--> 
-
-
-  
       <!-- /.content-wrapper -->
       <?php require_once('inc/footer.php') ?>
   </body>
