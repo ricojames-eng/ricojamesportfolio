@@ -119,6 +119,14 @@ while($row = $c_qry->fetch_assoc()){
       </div>
    </section> <!-- About Section End-->
 
+ <!-- About Section
+   ================================================== -->
+   <section id="offers">
+      <div class="row">
+
+      </div>
+   </section> <!-- About Section End-->
+
 
    <!-- Resume Section
    ================================================== -->
