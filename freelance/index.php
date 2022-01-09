@@ -77,7 +77,7 @@ while($row = $c_qry->fetch_assoc()){
    <section id="about">
       <div class="row">
          <div class="three columns">
-            <img class="profile-pic"  src="<?php echo validate_image($_settings->info('logo')) ?>" alt="" />
+            <img class="profile-pic"  src="profile_asset/images/mypic.png" alt="" />
          </div>
          <div class="nine columns main-col">
             <h2>About Me</h2>
