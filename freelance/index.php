@@ -1,6 +1,6 @@
 <?php require_once('config.php'); ?>
  <!DOCTYPE html>
-<html lang="en" class="" style="height: auto; width: auto;">
+<html lang="en" class="" style="height: auto;">
 <?php require_once('inc/header.php') ?>
   <body>
   <Style>
@@ -106,9 +106,6 @@
    <!-- Header ================================================== -->
    <header id="home">
       <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About Me</a></li>
@@ -154,6 +151,8 @@ while($row = $c_qry->fetch_assoc()){
           </p>
       </div>
    </header> <!-- Header End -->
+
+
    <!-- About Section
    ================================================== -->
    <section id="about">
