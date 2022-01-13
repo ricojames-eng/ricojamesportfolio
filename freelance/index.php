@@ -366,7 +366,7 @@ body {
             <div class="row item">
                <div class="twelve columns">
                   <h3><?php //echo $row['company'] ?></h3>
-                  <p class="info"><?php// echo $row['position'] ?> <span>&bull;</span> <em class="date"><?php echo str_replace("_"," ",$row['started']) ?> - <?php echo str_replace("_"," ",$row['ended']) ?></em></p>               
+                  <p class="info"><?php// echo $row['position'] ?> <span>&bull;</span> <em class="date"><?php //echo str_replace("_"," ",$row['started']) ?> - <?php //echo str_replace("_"," ",$row['ended']) ?></em></p>               
                   <p><?php// echo stripslashes(html_entity_decode($row['description'])) ?></p>
                </div>
             </div> <!-- item end -->
@@ -423,25 +423,6 @@ body {
       <?php endwhile; ?>
       </div> <!-- row End -->
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
    <!-- Portfolio Section
