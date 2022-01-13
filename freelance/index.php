@@ -128,7 +128,6 @@
 }
   </style>
    <!-- Header ================================================== -->
-   <header id="home">
     <div class="topnav">
             <a class="current"><a class="smoothscroll" href="#home">Home</a>
             <a class="smoothscroll" href="#about">About Me</a>
@@ -136,6 +135,7 @@
             <a class="smoothscroll" href="#resume">Resume</a>
             <a class="smoothscroll" href="#portfolio"> Projects Examples</a>
     </div>
+  <header id="home">
 <?php 
 $u_qry = $conn->query("SELECT * FROM users where id = 1");
 foreach($u_qry->fetch_array() as $k => $v){
