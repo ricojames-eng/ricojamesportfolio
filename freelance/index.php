@@ -130,14 +130,12 @@
    <!-- Header ================================================== -->
    <header id="home">
     <div class="topnav">
-      <nav id="nav-wrap">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About Me</a></li>
-            <li><a class="smoothscroll" href="#services">Services</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio"> Projects Examples</a></li>
-          </div>
-      </nav> <!-- end #nav-wrap -->
+            <a class="current"><a class="smoothscroll" href="#home">Home</a>
+            <a class="smoothscroll" href="#about">About Me</a>
+            <a class="smoothscroll" href="#services">Services</a>
+            <a class="smoothscroll" href="#resume">Resume</a>
+            <a class="smoothscroll" href="#portfolio"> Projects Examples</a>
+    </div>
 <?php 
 $u_qry = $conn->query("SELECT * FROM users where id = 1");
 foreach($u_qry->fetch_array() as $k => $v){
