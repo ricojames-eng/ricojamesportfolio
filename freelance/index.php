@@ -153,9 +153,9 @@ while($row = $c_qry->fetch_assoc()){
       <div class="row banner">
          <div class="banner-text" id="bg-text">
           <br></br>
-            <h2 style="color: Black; font-size: 4vw;" class="neonText">Hi I'm,</h2>
+            <h2 style="color: Black; font-size: 5vw;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <h2 style="color: Black; font-size: 4vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h2>
+            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h2>
             <br></br>
             <ul class="social">
                <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
@@ -165,8 +165,8 @@ while($row = $c_qry->fetch_assoc()){
       </div>
 
       <div class="banner-text" id="bg-text2">
-          <a style="font-size: 2vw;"><span>A Software Developer that helps Businesses, small to large agencies and individual</span></a>
-          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a life-time investment software application.</span></a>
+          <a style="font-size: 3vw;"><span>A Software Developer that helps Businesses, small to large agencies and individual</span></a>
+          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a life-time investment software application.</span></a>
           <br></br>
           <p class="scrolldown">
           <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
