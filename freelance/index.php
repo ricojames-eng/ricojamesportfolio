@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php require_once('config.php'); ?>
  <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
