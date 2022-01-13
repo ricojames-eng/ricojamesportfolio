@@ -1,4 +1,3 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php require_once('config.php'); ?>
  <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
@@ -154,6 +153,7 @@ while($row = $c_qry->fetch_assoc()){
           <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
           </p>
       </div>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
    </header> <!-- Header End -->
    <!-- About Section
    ================================================== -->
