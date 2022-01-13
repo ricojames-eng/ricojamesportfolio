@@ -350,6 +350,56 @@ body {
    </section> <!-- About Section End-->
    </section> <!-- About Section End-->
 
+      <section id="resume">
+      <div class="row">
+         <div class="twelve columns collapsed">
+          <br></br>
+            <center><h1 style="font-size:4vw;"> Done Projects </h1></center>
+            <br></br>
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="">
+               <?php 
+                  $w_qry = $conn->query("SELECT * FROM work ");
+                  while($row2 = $w_qry->fetch_assoc()):
+                  ?>
+                
+                    <div class="item-wrap">
+                       <a href="#modal-<?php echo $row2['id'] ?>" title="">                  
+                          <center><?php echo $row2['company'] ?></center>
+                          <div class="overlay">
+                             <div class="portfolio-item-meta">
+                            <center><h5 class="truncate-1"><?php echo $row2['title'] ?></h5></center>
+                                <!-- <p>Illustrration</p> -->
+                            </div>   
+                          <div class="link-icon"><center><a href="#modal-<?php echo $row2['id'] ?>" class="icon-plus">VIEW INFORMATION</a></center></div>
+                       </a>
+                    </div>
+                </div> <!-- item end -->
+              <?php endwhile; ?>
+            </div> <!-- portfolio-wrapper end -->
+         </div> <!-- twelve columns end -->
+
+                   <?php 
+              $w_qry = $conn->query("SELECT * FROM work ");
+              while($row2 = $w_qry->fetch_assoc()):
+            ?>
+
+         <!-- Modal Popup -->
+         <div id="modal-<?php echo $row2['id'] ?>" class="popup-modal mfp-hide">
+          <div class="description-box">
+            <h1><?php echo $row2['title'] ?></h1>
+            <p><?php echo stripslashes(html_entity_decode($row2['company'])) ?></p>
+               <span class="categories"><i class="fa fa-tag"></i><?php echo stripslashes(html_entity_decode($row2['description'])) ?></span>
+          </div>
+            <div class="link-box">
+               <!-- <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a> -->
+             <a class="popup-modal-dismiss">Close</a>
+            </div>
+        </div><!-- modal-01 End -->
+      <?php endwhile; ?>
+      </div> <!-- row End -->
+  </section>
+
 
    <!-- Portfolio Section
    ================================================== -->
