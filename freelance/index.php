@@ -4,13 +4,12 @@
 <?php require_once('inc/header.php') ?>
   <body>
   <Style>
-
    header {
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url("profile_asset/images/BG8.gif") no-repeat top center;
+   background: #161415 url("profile_asset/images/WB71.jpg") no-repeat top center;
    background-size: cover !important;
   -webkit-background-size: cover !important;
    text-align: center;
@@ -24,6 +23,62 @@
        vertical-align: middle;
        height: 100%;
     }
+
+    #bg-text {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+
+      animation-name: example;
+      animation-duration: 4s;
+    }
+
+     
+
+      .neonText {
+       color: #fff;
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #fff,
+       0 0 21px #fff,
+       0 0 42px #5271ff,
+       0 0 82px #5271ff,
+       0 0 92px #5271ff,
+       0 0 102px #5271ff,
+       0 0 151px #5271ff;
+       font-weight: 400;
+       font-family: "Yellowtail", sans-serif;
+  }
+
+  .neonText2 {
+       color: #fff;
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #fff,
+       0 0 21px #fff,
+       0 0 42px #5271ff,
+       0 0 82px #5271ff,
+       0 0 92px #5271ff,
+       0 0 102px #5271ff,
+       0 0 151px #5271ff;
+       font-weight: 400;
+       font-family: "Yellowtail", sans-serif;
+  }
+
+  @keyframes example {
+  0%   {left:0%; top:0%;}
+  25%  {left:50%; top:50%;}
+  50%  {left:75%; top:90%;}
+}
   </style>
    <!-- Header ================================================== -->
    <header id="home">
@@ -34,7 +89,7 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About Me</a></li>
-            <li><a class="smoothscroll" href="#services">Offer</a></li>
+            <li><a class="smoothscroll" href="#services">Services</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio"> Projects Examples</a></li>
          </ul> <!-- end #nav -->
@@ -53,24 +108,22 @@ while($row = $c_qry->fetch_assoc()){
 // var_dump($contact['facebook']);
 ?>
       <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Welcome! I'm</h1>
-            <h1 class="responsive-headline"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h1>
-            <h3><?php echo stripslashes($_settings->info('welcome_message')) ?></h3>
-            <hr />
+         <div class="banner-text" id="bg-text">
+          <br></br>
+            <h2 style="color: Black; font-size: 4vw;" class="neonText">Hi I'm</h2>
+            <br></br>
+            <h2 style="color: Black; font-size: 4vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h2>
+            <br></br>
             <ul class="social">
                <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
-              <!-- <li><a target="_blank" href="<?php echo $contact['twitter'] ?>"><i class="fa fa-twitter"></i></a></li> -->
                <li><a target="_blank" href="mailto:<?php echo $contact['email'] ?>"><i class="fa fa-google-plus"></i></a></li>
-              <!-- <li><a target="_blank" href="<?php echo $contact['linkin'] ?>"><i class="fa fa-linkedin"></i></a></li> -->
-            </ul>
+           </ul>
          </div>
       </div>
       <p class="scrolldown">
          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
    </header> <!-- Header End -->
-
 
    <!-- About Section
    ================================================== -->
