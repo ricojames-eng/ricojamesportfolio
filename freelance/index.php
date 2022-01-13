@@ -132,8 +132,8 @@
             <a class="current"><a class="smoothscroll" href="#home">Home</a>
             <a class="smoothscroll" href="#about">About Me</a>
             <a class="smoothscroll" href="#services">Services</a>
-          <!--  <a class="smoothscroll" href="#resume">Resume</a> -->
-            <a class="smoothscroll" href="#portfolio"> Projects Examples</a>
+            <a class="smoothscroll" href="#resume">Projects</a> 
+            <a class="smoothscroll" href="#portfolio">Examples</a>
     </div>
   <header id="home">
 <?php 
@@ -165,7 +165,7 @@ while($row = $c_qry->fetch_assoc()){
       </div>
 
       <div class="banner-text" id="bg-text2">
-          <a style="font-size: 3vw;"><span>A Software Developer that helps Businesses, small to large agencies and individual</span></a>
+          <a style="font-size: 3vw;"><span>A Software Developer that helps Businesses, small to large agencies and individuals </span></a>
           <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a life-time investment software application.</span></a>
           <br></br>
           <p class="scrolldown">
@@ -350,54 +350,98 @@ body {
    </section> <!-- About Section End-->
    </section> <!-- About Section End-->
 
-   <!-- Resume Section
-   ================================================== -->
-    <!--<section id="resume">
-      <!-- Education -->
-       <!--<div class="row education">
+   <!-- PROJECTS Section ================================================== -->
+   <!--<section id="resume">
+      <!-- PROJECTS -->
+    <!--  <div class="row work">
          <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-         <div class="nine columns main-col">
-          <?php 
-          $e_qry = $conn->query("SELECT * FROM education order by year desc, month desc");
-          while($row = $e_qry->fetch_assoc()):
-          ?>
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3><?php echo $row['school'] ?></h3>
-                  <p class="info"><?php echo $row['degree'] ?> <span>&bull;</span> <em class="date"><?php echo $row['month'].' '.$row['year'] ?></em></p>
-                  <p>
-                  <?php echo stripslashes(html_entity_decode($row['description'])) ?>
-                  </p>
-               </div>
-            </div> <!-- item end -->
-        <!--   <?php endwhile; ?>        
-         </div> <!-- main-col end -->
-      <!-- </div> <!-- End Education -->
-
-
-      <!-- Work -->
-      <div class="row work">
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
+            <h1><span>Projects</span></h1>
          </div>
 
          <div class="nine columns main-col">
           <?php 
-          $w_qry = $conn->query("SELECT * FROM work ");
-          while($row = $w_qry->fetch_assoc()):
+        //  $w_qry = $conn->query("SELECT * FROM work ");
+        //  while($row = $w_qry->fetch_assoc()):
           ?>
             <div class="row item">
                <div class="twelve columns">
-                  <h3><?php echo $row['company'] ?></h3>
-                  <p class="info"><?php echo $row['position'] ?> <span>&bull;</span> <em class="date"><?php echo str_replace("_"," ",$row['started']) ?> - <?php echo str_replace("_"," ",$row['ended']) ?></em></p>               
-                  <p><?php echo stripslashes(html_entity_decode($row['description'])) ?></p>
+                  <h3><?php //echo $row['company'] ?></h3>
+                  <p class="info"><?php// echo $row['position'] ?> <span>&bull;</span> <em class="date"><?php echo str_replace("_"," ",$row['started']) ?> - <?php echo str_replace("_"," ",$row['ended']) ?></em></p>               
+                  <p><?php// echo stripslashes(html_entity_decode($row['description'])) ?></p>
                </div>
             </div> <!-- item end -->
-          <?php endwhile; ?>
+       <!--   <?php //endwhile; ?>
          </div> <!-- main-col end -->
-      </div> <!-- End Work --> 
+     <!-- </div> <!-- End Work -->
+
+      <section id="resume">
+      <div class="row">
+         <div class="twelve columns collapsed">
+          <br></br>
+            <center><h1 style="font-size:4vw;"> Done Projects </h1></center>
+            <br></br>
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="">
+               <?php 
+                  $w_qry = $conn->query("SELECT * FROM work ");
+                  while($row = $w_qry->fetch_assoc()):
+                  ?>
+                
+                    <div class="item-wrap">
+                       <a href="#modal-<?php echo $row['id'] ?>" title="">                  
+                          <center><?php echo $row['company'] ?></center>
+                          <div class="overlay">
+                             <div class="portfolio-item-meta">
+                            <center><h5 class="truncate-1"><?php echo $row['title'] ?></h5></center>
+                                <!-- <p>Illustrration</p> -->
+                            </div>   
+                          <div class="link-icon"><center><a href="#modal-<?php echo $row['id'] ?>" class="icon-plus">VIEW INFORMATION</a></center></div>
+                       </a>
+                    </div>
+                </div> <!-- item end -->
+              <?php endwhile; ?>
+            </div> <!-- portfolio-wrapper end -->
+         </div> <!-- twelve columns end -->
+
+                   <?php 
+              $w_qry = $conn->query("SELECT * FROM work ");
+              while($row2 = $w_qry->fetch_assoc()):
+            ?>
+
+         <!-- Modal Popup -->
+         <div id="modal-<?php echo $row2['id'] ?>" class="popup-modal mfp-hide">
+          <div class="description-box">
+            <h1><?php echo $row2['title'] ?></h1>
+            <p><?php echo stripslashes(html_entity_decode($row2['company'])) ?></p>
+               <span class="categories"><i class="fa fa-tag"></i><?php echo stripslashes(html_entity_decode($row2['description'])) ?></span>
+          </div>
+            <div class="link-box">
+               <!-- <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a> -->
+             <a class="popup-modal-dismiss">Close</a>
+            </div>
+        </div><!-- modal-01 End -->
+      <?php endwhile; ?>
+      </div> <!-- row End -->
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    <!-- Portfolio Section

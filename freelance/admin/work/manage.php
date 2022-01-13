@@ -35,6 +35,16 @@ if(isset($_GET['id'])){
 						</div>
 					</div>
 				</div>
+
+				<div class="row" class="details">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="" class="control-label">Project Title</label>
+							<textarea name="position" cols="30" rows="2" class="form-control"><?php echo isset($title) ? $title : '' ?></textarea>
+						</div>
+					</div>
+				</div>
+
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="form-group col-xs-7">
