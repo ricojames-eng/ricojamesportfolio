@@ -1,6 +1,6 @@
 <?php require_once('config.php'); ?>
  <!DOCTYPE html>
-<html lang="en" class="" style="height: auto;">
+<html lang="en" class="" style="height: auto; width: auto;">
 <?php require_once('inc/header.php') ?>
   <body>
   <Style>
@@ -106,13 +106,11 @@
    <!-- Header ================================================== -->
    <header id="home">
       <nav id="nav-wrap">
-         <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About Me</a></li>
             <li><a class="smoothscroll" href="#services">Services</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio"> Projects Examples</a></li>
-         </ul> <!-- end #nav -->
       </nav> <!-- end #nav-wrap -->
 <?php 
 $u_qry = $conn->query("SELECT * FROM users where id = 1");
@@ -151,8 +149,6 @@ while($row = $c_qry->fetch_assoc()){
           </p>
       </div>
    </header> <!-- Header End -->
-
-
    <!-- About Section
    ================================================== -->
    <section id="about">
