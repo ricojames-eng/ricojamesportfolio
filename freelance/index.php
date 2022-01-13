@@ -133,7 +133,7 @@
             <a class="smoothscroll" href="#about">About Me</a>
             <a class="smoothscroll" href="#services">Services</a>
             <a class="smoothscroll" href="#resume">Projects</a> 
-            <a class="smoothscroll" href="#portfolio">Examples</a>
+          <!--  <a class="smoothscroll" href="#portfolio">Examples</a> -->
     </div>
   <header id="home">
 <?php 
@@ -398,6 +398,8 @@ body {
         </div><!-- modal-01 End -->
       <?php endwhile; ?>
       </div> <!-- row End -->
+
+      <center><a class="smoothscroll" href="#portfolio">View some insights.</a></center>
   </section>
 
 
