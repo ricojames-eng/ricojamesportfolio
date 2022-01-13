@@ -42,6 +42,23 @@
       animation-duration: 4s;
     }
 
+        #bg-text2 {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+
+      animation-name: example2;
+      animation-duration: 8s;
+    }
      
 
       .neonText {
@@ -75,9 +92,15 @@
   }
 
   @keyframes example {
-  0%   {left:0%; top:0%;}
-  25%  {left:50%; top:50%;}
-  50%  {left:75%; top:90%;}
+  0%   {top:0%;}
+  25%  {top:50%;}
+}
+
+  @keyframes example2 {
+  0%   {top:0%;}
+  25%  {top:25%;}
+  }
+
 }
   </style>
    <!-- Header ================================================== -->
@@ -107,12 +130,13 @@ while($row = $c_qry->fetch_assoc()){
 }
 // var_dump($contact['facebook']);
 ?>
+
       <div class="row banner">
          <div class="banner-text" id="bg-text">
           <br></br>
-            <h2 style="color: Black; font-size: 5vw;" class="neonText">Hi I'm</h2>
+            <h2 style="color: Black; font-size: 4vw;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h2>
+            <h2 style="color: Black; font-size: 4vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h2>
             <br></br>
             <ul class="social">
                <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
@@ -120,11 +144,16 @@ while($row = $c_qry->fetch_assoc()){
            </ul>
          </div>
       </div>
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-   </header> <!-- Header End -->
 
+      <div class="banner-text" id="bg-text2">
+          <a style="font-size: 2vw;"><span>A Software Developer that helps Businesses, small to large agencies and individual</span></a>
+          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a life-time investment software application.</span></a>
+          <br></br>
+          <p class="scrolldown">
+          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+          </p>
+      </div>
+   </header> <!-- Header End -->
    <!-- About Section
    ================================================== -->
    <section id="about">
