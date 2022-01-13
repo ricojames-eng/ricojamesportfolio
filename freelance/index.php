@@ -132,7 +132,7 @@
             <a class="current"><a class="smoothscroll" href="#home">Home</a>
             <a class="smoothscroll" href="#about">About Me</a>
             <a class="smoothscroll" href="#services">Services</a>
-            <a class="smoothscroll" href="#resume">Resume</a>
+          <!--  <a class="smoothscroll" href="#resume">Resume</a> -->
             <a class="smoothscroll" href="#portfolio"> Projects Examples</a>
     </div>
   <header id="home">
@@ -197,25 +197,8 @@ while($row = $c_qry->fetch_assoc()){
                   <span><a>Email Add: </a><a><?php echo $contact['email'] ?></a></span>
              </p>
                </div>
-               <!--
-                 <div class="columns ">
-                 </br></br>
-                  <h2>Types of services:</h2>
-                  <p class="address">
-                  <span><h2><a>- Software Application Development.</a></span><br>
-                  <span><h2><a>- Mobile Application Development.</a></span><br>
-                  <span><h2><a>- Website Development.</a></span><br>
-                  <span><h2><a>- Internet Of Things Development.</a></span><br>
-                  <span><h2><a>- Hardware and Software Development.</a></span><br>
-                  <span><h2><a>- All types of System Applications.</a></span><br>
-                  <span><h2><a>- All types of Software Automation Projects.</a></span><br>
-                  <span><h2><a>- All types of Software and Hardware Thesis Projects.</a></span><br>
-             </p>
-               </div> -->
                <div class="columns download">
-                  <p>
-                     <!-- <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a> -->
-                  </p>
+                  <p></p>
                </div>
             </div> <!-- end row -->
          </div> <!-- end .main-col -->
@@ -367,12 +350,11 @@ body {
    </section> <!-- About Section End-->
    </section> <!-- About Section End-->
 
-
    <!-- Resume Section
    ================================================== -->
-   <section id="resume">
+    <!--<section id="resume">
       <!-- Education -->
-      <div class="row education">
+       <!--<div class="row education">
          <div class="three columns header-col">
             <h1><span>Education</span></h1>
          </div>
@@ -390,9 +372,9 @@ body {
                   </p>
                </div>
             </div> <!-- item end -->
-          <?php endwhile; ?>        
+        <!--   <?php endwhile; ?>        
          </div> <!-- main-col end -->
-      </div> <!-- End Education -->
+      <!-- </div> <!-- End Education -->
 
 
       <!-- Work -->
@@ -415,7 +397,7 @@ body {
             </div> <!-- item end -->
           <?php endwhile; ?>
          </div> <!-- main-col end -->
-      </div> <!-- End Work -->
+      </div> <!-- End Work --> 
 
 
    <!-- Portfolio Section
