@@ -114,7 +114,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .topnav a:hover {
