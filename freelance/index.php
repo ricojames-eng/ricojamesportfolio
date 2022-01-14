@@ -129,10 +129,10 @@
   </style>
    <!-- Header ================================================== -->
     <div class="topnav">
-            <a class="current"><a class="smoothscroll" href="#home">Home</a>
+            <center><a class="current"><a class="smoothscroll" href="#home">Home</a>
             <a class="smoothscroll" href="#about">About Me</a>
             <a class="smoothscroll" href="#services">Services</a>
-            <a class="smoothscroll" href="#resume">Projects</a> 
+            <a class="smoothscroll" href="#resume">Projects</a></center>
           <!--  <a class="smoothscroll" href="#portfolio">Examples</a> -->
     </div>
   <header id="home">
@@ -153,7 +153,7 @@ while($row = $c_qry->fetch_assoc()){
       <div class="row banner">
          <div class="banner-text" id="bg-text">
           <br></br>
-            <h2 style="color: Black; font-size: 6vw;" class="neonText">Hi I'm,</h2>
+            <h2 style="color: Black; font-size: 70px;" class="neonText">Hi I'm,</h2>
             <br></br>
             <h2 style="color: Black; font-size: 6vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname']) : ""; ?></h2>
             <br></br>
@@ -162,8 +162,8 @@ while($row = $c_qry->fetch_assoc()){
       </div>
 
       <div class="banner-text" id="bg-text2" >
-          <a style="font-size: 2vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
+          <a style="font-size: 3vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
+          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
           <br></br>
                     <ul class="social">
                      <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
