@@ -153,17 +153,17 @@ while($row = $c_qry->fetch_assoc()){
       <div class="row banner">
          <div class="banner-text" id="bg-text">
           <br></br>
-            <h2 style="color: Black; font-size: 5vw;" class="neonText">Hi I'm,</h2>
+            <h2 style="color: Black; font-size: 70px;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname']) : ""; ?></h2>
+            <h2 style="color: Black; font-size: 70px;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname']) : ""; ?></h2>
             <br></br>
-            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['lastname']) : ""; ?></h2>
+            <h2 style="color: Black; font-size: 70px;" class="neonText"><?php echo isset($user) ? ucwords($user['lastname']) : ""; ?></h2>
          </div>
       </div>
 
       <div class="banner-text" id="bg-text2" >
-          <a style="font-size: 2vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
+          <a style="font-size: 22px;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
+          <a style="font-size: 22px;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
           <br></br>
                     <ul class="social">
                      <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
