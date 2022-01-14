@@ -30,32 +30,31 @@
       color: white;
       font-weight: bold;
       position: absolute;
-      top: 50%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
       width: 100%;
       padding: 20px;
       text-align: center;
-
+      white-space: normal;
       animation-name: example;
       animation-duration: 4s;
     }
 
         #bg-text2 {
       background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+      background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
       color: white;
       font-weight: bold;
       position: absolute;
-      top: 80%;
+      top: 77%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
       width: 100%;
       padding: 20px;
       text-align: center;
-
       animation-name: example2;
       animation-duration: 8s;
     }
@@ -74,6 +73,7 @@
        0 0 151px #5271ff;
        font-weight: 400;
        font-family: "Yellowtail", sans-serif;
+
   }
 
   .neonText2 {
@@ -155,55 +155,27 @@ while($row = $c_qry->fetch_assoc()){
           <br></br>
             <h2 style="color: Black; font-size: 5vw;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname'].' '.$user['lastname']) : ""; ?></h2>
+            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname']) : ""; ?></h2>
             <br></br>
-            <ul class="social">
-               <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
-               <li><a target="_blank" href="mailto:<?php echo $contact['email'] ?>"><i class="fa fa-google-plus"></i></a></li>
-           </ul>
+            <h2 style="color: Black; font-size: 5vw;" class="neonText"><?php echo isset($user) ? ucwords($user['lastname']) : ""; ?></h2>
          </div>
       </div>
 
-      <div class="banner-text" id="bg-text2">
-          <a style="font-size: 3vw;"><span>A Software Developer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a life-time investment software application.</span></a>
+      <div class="banner-text" id="bg-text2" >
+          <a style="font-size: 2vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
+          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
+          <br></br>
+                    <ul class="social">
+                     <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
+                     <li><a target="_blank" href="mailto:<?php echo $contact['email'] ?>"><i class="fa fa-google-plus"></i></a></li>
+                 </ul>
+          <a class="smoothscroll" href="#about">READ MORE</a>
           <br></br>
           <p class="scrolldown">
           <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
           </p>
       </div>
    </header> <!-- Header End -->
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-      <div class="row">
-         <div class="three columns">
-            <img class="profile-pic"  src="profile_asset/images/mypic.png" alt="" />
-         </div>
-         <div class="nine columns main-col">
-            <h2>About Me</h2>
-            <style>
-              #about_me *{
-                color:#7A7A7A !important;
-              }
-            </style>
-            <div id="about_me"><?php include "about.html"; ?></div>
-            <div class="row">
-               <div class="columns ">
-                  <h2>Contact Details</h2>
-                  <p class="address">
-                  <span><a>Address: </a><a><?php echo $contact['address'] ?></a></span><br>
-                  <span><a>Contact #: </a><a><?php echo $contact['mobile'] ?></a></span><br>
-                  <span><a>Email Add: </a><a><?php echo $contact['email'] ?></a></span>
-             </p>
-               </div>
-               <div class="columns download">
-                  <p></p>
-               </div>
-            </div> <!-- end row -->
-         </div> <!-- end .main-col -->
-      </div>
-   </section> <!-- About Section End-->
 
 <!-- Offer Section
    ================================================== -->
@@ -250,31 +222,77 @@ body {
   background-color: #f1f1f1;
 }
 </style>
+
    <section id="services">
    <section id="about">
       <div class="row">
          <div class="three columns">
             <img class="profile-pic"  src="profile_asset/images/services.jpg" alt="" />
          </div>
-         <div class="nine columns main-col">
-            <center><h2>OFFER SERVICES</h2></center>
-           
-           <div class="row1">
+
+         <div class="nine columns main-col" style="text-align: justify;">
+            <center><a class="neonText" style="font-size: 34px;"><span style="color:White;font-weight:Italic;font-size: 34px;">WHY YOU MUST HAVE A SOFTWARE SYSTEM?</span></a></center>
+
+            <a style="font-size: 18px;">
+              <span style="color:White;font-weight:bold;font-size:24px;">Softwares</span> come with the capability of 
+              <span style="color:White;font-weight:bold">automating several processes</span> 
+              which are otherwise complex and time consuming to be done manually.
+              Choosing the right software can help a businesses or individual grow by 
+            <span style="color:White;font-weight:bold">leaps</span> and
+            <span style="color:White;font-weight:bold">bounds</span>.</a>
+
+            <br></br>
+            <a style="font-size: 18px;">This
+              <span style="color:White;font-weight:bold;font-size:22px;">improves efficiency</span> and
+              <span style="color:White;font-weight:bold;font-size:22px;">effectiveness</span> 
+              of the users activities. The Software 
+              <span style="color:White;font-weight:bold;font-size:22px;">reduces</span> the
+              <span style="color:White;font-weight:bold;font-size:22px;">workload</span> and
+              <span style="color:White;font-weight:bold;font-size:22px;">automation</span> of
+              <span style="color:White;font-weight:bold;font-size:22px;">activities</span>
+              .
+              it also assits in  
+              <span style="color:White;font-weight:bold;font-size:22px;">elimination</span> of
+              <span style="color:White;font-weight:bold;font-size:22px;">human error</span>
+              , as a result, 
+              <span style="color:White;font-weight:bold;font-size:22px;">improves effectiveness</span> and 
+              <span style="color:White;font-weight:bold;font-size:22px;">consistency</span>.</a>
+
+              <br></br>
+              <center><a class="neonText" style="font-size:  34px;"><span style="color:White;font-weight:Italic;font-size: 34px;">WHAT CAN I OFFER?</span></a></center>
+              <a style="font-size: 18px;">
+                I can offer you a 
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">affordable</span>
+                yet 
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">competitive fully customize</span>
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">software product</span> that is 
+                based 
+                on what you 
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">need</span> and 
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">desires</span>.
+                Below are the available services that I offer.
+              </a>
+
+              <br></br>
+           <center><a class="neonText" style="font-size:  34px;"><span style="color:Black;font-weight:Italic;font-size: 34px;">AVAILABLE SERVICES</span></a></center>
+              <div class="row1">
             <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/Software_dev.jpg" alt="" />
                 <h3>Software Application Development.</h3>
-                <p>Free maintenance.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free Software Maintenance.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
 
               <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/mobile_dev.jpg" alt="" />
                 <h3>Mobile Application Development.</h3>
-                <p>Android and IOS.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Both Android and IOS.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
             </div>
@@ -284,19 +302,21 @@ body {
              <div class="row1">
             <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/web_dev.jpg" alt="" />
                 <h3>Website Page Development.</h3>
-                <p>With Admin page.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free Web page Maintenance.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
 
               <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/iot_dev.jpg" alt="" />
                 <h3>Internet Of Things Development.</h3>
-                <p>Free repair charge.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free Repair Charge.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
             </div>
@@ -306,19 +326,21 @@ body {
              <div class="row1">
             <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/softhard_dev.jpg" alt="" />
                 <h3>Hardware and Software Development.</h3>
-                <p>Free repair charge and maintenance.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free Repair Charge and Maintenance.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
 
               <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/sys_dev.jpg" alt="" />
                 <h3>All types of System Applications.</h3>
-                <p>Free maintenance.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free System Maintenance.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
             </div>
@@ -328,19 +350,21 @@ body {
              <div class="row1">
             <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/automation_dev.jpg" alt="" />
                 <h3>All types of Automation Projects.</h3>
-                <p>Free repair charge and maintenance.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free Repair Charge and Maintenance.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
 
               <div class="column1">
               <div class="card1">
+                <img class="profile-pic"  src="profile_asset/images/icon/thesis_dev.jpg" alt="" />
                 <h3>All types of IT Related Thesis Projects.</h3>
-                <p>Free project document.</p>
-                <p>Free 2 Days Training</p>
-                <p>Free 24/7 Live Chat Support</p>
+                <p>Free Project Revision.</p>
+                <p>Free 2 Days Training.</p>
+                <p>Free 24/7 Live Chat Support.</p>
               </div>
             </div>
             </div>
@@ -457,6 +481,38 @@ body {
       </div> <!-- row End -->
    </section> <!-- Portfolio Section End-->
 
+     <!-- About Section
+   ================================================== -->
+   <section id="about">
+      <div class="row">
+         <div class="three columns">
+            <img class="profile-pic"  src="profile_asset/images/mypic.png" alt="" />
+         </div>
+         <div class="nine columns main-col">
+            <h2>About Me</h2>
+            <style>
+              #about_me *{
+                color:#7A7A7A !important;
+              }
+            </style>
+            <div id="about_me"><?php include "about.html"; ?></div>
+            <div class="row">
+               <div class="columns ">
+                  <h2>Contact Details</h2>
+                  <p class="address">
+                  <span><a>Address: </a><a><?php echo $contact['address'] ?></a></span><br>
+                  <span><a>Contact #: </a><a><?php echo $contact['mobile'] ?></a></span><br>
+                  <span><a>Email Add: </a><a><?php echo $contact['email'] ?></a></span>
+                  <br></br>
+             </p>
+               </div>
+               <div class="columns download">
+                  <p></p>
+               </div>
+            </div> <!-- end row -->
+         </div> <!-- end .main-col -->
+      </div>
+   </section> <!-- About Section End-->
 
       <!-- /.content-wrapper -->
       <?php require_once('inc/footer.php') ?>
