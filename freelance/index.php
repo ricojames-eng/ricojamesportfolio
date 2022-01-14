@@ -155,7 +155,7 @@ while($row = $c_qry->fetch_assoc()){
           <br></br>
             <h2 style="color: Black; font-size: 70px;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <center><a class="neonText" style="font-size: 6vw;"><span style="color:Black;font-weight:Italic;font-size: 34px;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
+            <center><a class="neonText" style="font-size: 6vw;"><span style="color:Black;font-weight:Italic;font-size: 6vw;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
          </div>
       </div>
 
