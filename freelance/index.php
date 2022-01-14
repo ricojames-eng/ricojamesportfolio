@@ -161,7 +161,7 @@ while($row = $c_qry->fetch_assoc()){
 
       <div class="banner-text" id="bg-text2" >
           <a style="font-size: 3vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
+          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable <span class="neonText" style="color:White;font-weight:Italic;font-size:3vw;">life-time investment</span> software application.</span></a>
           <br></br>
           <a class="smoothscroll" href="#about">READ MORE</a>
           <br></br>
@@ -210,7 +210,42 @@ body {
 
 /* Style the counter cards */
 .card1 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/* Float four columns side by side */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row2 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
@@ -369,18 +404,20 @@ body {
    </section> <!-- About Section End-->
 
       <section id="resume">
-      <div class="row">
+      <div class="">
          <div class="twelve columns collapsed">
           <br></br>
             <center><h1 style="font-size:4vw;"> Done Projects </h1></center>
             <br></br>
+
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="">
                <?php 
                   $w_qry = $conn->query("SELECT * FROM work ");
                   while($row2 = $w_qry->fetch_assoc()):
                   ?>
-                
+                  <div class="column2">
+                    <div class="card2">
                     <div class="item-wrap">
                        <a href="#modal-<?php echo $row2['id'] ?>" title="">                  
                           <center><?php echo $row2['company'] ?></center>
@@ -391,7 +428,9 @@ body {
                             </div>   
                           <div class="link-icon"><center><a href="#modal-<?php echo $row2['id'] ?>" class="icon-plus">VIEW INFORMATION</a></center></div>
                        </a>
-                    </div>
+                        </div> <!-- CARD1 -->
+                      </div>   <!-- COLUMN1 -->
+                   </div>
                 </div> <!-- item end -->
               <?php endwhile; ?>
             </div> <!-- portfolio-wrapper end -->
@@ -416,8 +455,6 @@ body {
         </div><!-- modal-01 End -->
       <?php endwhile; ?>
       </div> <!-- row End -->
-
-      <center><a class="smoothscroll" href="#portfolio">View some insights.</a></center>
   </section>
 
 
