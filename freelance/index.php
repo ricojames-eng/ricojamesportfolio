@@ -155,13 +155,13 @@ while($row = $c_qry->fetch_assoc()){
           <br></br>
             <h2 style="color: Black; font-size: 70px;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <center><a class="neonText" style="font-size: 34px;"><span style="color:White;font-weight:Italic;font-size: 34px;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
+            <center><a class="neonText" style="font-size: 6vw;"><span style="color:Black;font-weight:Italic;font-size: 34px;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
          </div>
       </div>
 
       <div class="banner-text" id="bg-text2" >
-          <a style="font-size: 3vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
+          <a style="font-size: 2vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
+          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
           <br></br>
                     <ul class="social">
                      <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
