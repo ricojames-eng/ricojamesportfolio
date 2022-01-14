@@ -160,13 +160,9 @@ while($row = $c_qry->fetch_assoc()){
       </div>
 
       <div class="banner-text" id="bg-text2" >
-          <a style="font-size: 2vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 2vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
+          <a style="font-size: 3vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
+          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable life-time investment software application.</span></a>
           <br></br>
-                    <ul class="social">
-                     <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
-                     <li><a target="_blank" href="mailto:<?php echo $contact['email'] ?>"><i class="fa fa-google-plus"></i></a></li>
-                 </ul>
           <a class="smoothscroll" href="#about">READ MORE</a>
           <br></br>
           <p class="scrolldown">
@@ -501,6 +497,10 @@ body {
                   <span><a>Address: </a><a><?php echo $contact['address'] ?></a></span><br>
                   <span><a>Contact #: </a><a><?php echo $contact['mobile'] ?></a></span><br>
                   <span><a>Email Add: </a><a><?php echo $contact['email'] ?></a></span>
+                    <ul class="social">
+                  <li><a target="_blank" href="<?php echo $contact['facebook'] ?>"><i class="fa fa-facebook"> MY FACEBOOK</i></a></li>
+                  <li><a target="_blank" href="mailto:<?php echo $contact['email'] ?>"><i class="fa fa-google-plus"> EMAIL ME</i></a></li>
+                 </ul>
                   <br></br>
              </p>
                </div>
