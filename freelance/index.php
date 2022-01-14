@@ -155,9 +155,7 @@ while($row = $c_qry->fetch_assoc()){
           <br></br>
             <h2 style="color: Black; font-size: 70px;" class="neonText">Hi I'm,</h2>
             <br></br>
-            <h2 style="color: Black; font-size: 6vw;" class="neonText"><?php echo isset($user) ? ucwords($user['firstname']) : ""; ?></h2>
-            <br></br>
-            <h2 style="color: Black; font-size: 6vw;" class="neonText"><?php echo isset($user) ? ucwords($user['lastname']) : ""; ?></h2>
+            <center><a class="neonText" style="font-size: 34px;"><span style="color:White;font-weight:Italic;font-size: 34px;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
          </div>
       </div>
 
