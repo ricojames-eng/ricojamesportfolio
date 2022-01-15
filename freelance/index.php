@@ -130,7 +130,7 @@
    <!-- Header ================================================== -->
     <div class="topnav">
             <center><a class="current"><a class="smoothscroll" href="#home">Home</a>
-            <a class="smoothscroll" href="#about">About Me</a>
+            <a class="smoothscroll" href="#me">About Me</a>
             <a class="smoothscroll" href="#services">Services</a>
             <a class="smoothscroll" href="#resume">Projects</a></center>
           <!--  <a class="smoothscroll" href="#portfolio">Examples</a> -->
@@ -514,6 +514,7 @@ body {
 
      <!-- About Section
    ================================================== -->
+   <section id="me">
    <section id="about">
       <div class="row">
          <div class="three columns">
@@ -548,7 +549,7 @@ body {
          </div> <!-- end .main-col -->
       </div>
    </section> <!-- About Section End-->
-
+ </section>
       <!-- /.content-wrapper -->
       <?php require_once('inc/footer.php') ?>
   </body>
