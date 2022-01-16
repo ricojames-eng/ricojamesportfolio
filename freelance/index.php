@@ -548,6 +548,40 @@ body {
                </div>
             </div> <!-- end row -->
          </div> <!-- end .main-col -->
+
+                    <form action="message.php" method="POST">
+              <center><h2>LEAVE A MESSAGE</h2></center>
+              <label for="fname" style="color:White;">Full name</label>
+              <input type="text" id="fname" name="firstname" placeholder="" required>
+
+              <label for="add" style="color:White;">Address</label>
+              <input type="text" id="add" name="address" placeholder="" required>
+
+              <label for="cont" style="color:White;">Contact Information</label>
+              <input type="text" id="cont" name="contact" placeholder="Cellphone # / Email Address" required>
+
+              <label for="organiz" style="color:White;">Organization</label>
+              <input type="text" id="organiz" name="organization" placeholder="Ex. Business Name" required>
+
+              <label for="stype" style="color:White;">Software Type</label>
+              <select id="stype" name="softwaretype" required>
+                <option value="Business">Business</option>
+                <option value="Personal">Personal</option>
+                <option value="Educational">Educational</option>
+              </select>
+
+              <label for="ssize" style="color:White;">Software size</label>
+              <select id="ssize" name="softwaresize" required>
+                <option value="Small">Small</option>
+                <option value="Large">Large</option>
+              </select>
+
+              <label for="subject" style="color:White;">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Inquire something..." style="height:200px" required></textarea>
+
+            <center><input type="submit" value="Submit"></center>
+          </form>
+
       </div>
    </section> <!-- About Section End-->
  </section>
