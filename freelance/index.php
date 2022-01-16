@@ -153,9 +153,8 @@ while($row = $c_qry->fetch_assoc()){
       <div class="row banner">
          <div class="banner-text" id="bg-text">
           <br></br>
-            <h2 style="color: Black; font-size: 70px;" class="neonText">Hi I'm,</h2>
-            <br></br>
-            <center><a class="neonText" style="font-size: 6vw;"><span style="color:Black;font-weight:Italic;font-size: 5vw;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
+            <h2 style="color: Black; font-size: 6vw; line-height : 7vw;" class="neonText">Hi I'm,</h2>
+            <center><a class="neonText" style="font-size: 6vw;"><span style="color:Black;font-weight:Italic;font-size: 6vw; line-height : 7vw;">ENGR.RICO JAMES BRILLANTES QUIRANTE</span></a></center>
          </div>
       </div>
 
