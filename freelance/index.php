@@ -159,8 +159,8 @@ while($row = $c_qry->fetch_assoc()){
       </div>
 
       <div class="banner-text" id="bg-text2" >
-          <a style="font-size: 3vw;"><span>A Software Developer Engineer that helps Businesses, small to large agencies and individuals </span></a>
-          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you a affordable <span class="neonText" style="color:White;font-weight:Italic;font-size:3vw;">life-time investment</span> software application.</span></a>
+          <a style="font-size: 3vw;"><span>A Software Developer Engineer that helps businesses, small to large agencies, and individuals </span></a>
+          <a style="font-size: 3vw;"><span>to bring their Software ideas to life. I`ll offer you an affordable <span class="neonText" style="color:White;font-weight:Italic;font-size:3vw;">lifetime investment</span> software application.</span></a>
           <br></br>
           <a class="smoothscroll" href="#about">READ MORE</a>
           <br></br>
@@ -264,22 +264,24 @@ body {
             <a style="font-size: 18px;">
               <span style="color:White;font-weight:bold;font-size:24px;">Softwares</span> come with the capability of 
               <span style="color:White;font-weight:bold">automating several processes</span> 
-              which are otherwise complex and time consuming to be done manually.
-              Choosing the right software can help a businesses or individual grow by 
+              which are otherwise complex and time-consuming to be done manually.
+              Choosing the right software can help businesses or individuals grow by 
             <span style="color:White;font-weight:bold">leaps</span> and
             <span style="color:White;font-weight:bold">bounds</span>.</a>
 
             <br></br>
-            <a style="font-size: 18px;">This
-              <span style="color:White;font-weight:bold;font-size:22px;">improves efficiency</span> and
+            <a style="font-size: 18px;">This will
+              <span style="color:White;font-weight:bold;font-size:22px;">improve</span> the
+              <span style="color:White;font-weight:bold;font-size:22px;">efficiency</span>
+               and
               <span style="color:White;font-weight:bold;font-size:22px;">effectiveness</span> 
-              of the users activities. The Software 
+              of the user's activities. The Software 
               <span style="color:White;font-weight:bold;font-size:22px;">reduces</span> the
               <span style="color:White;font-weight:bold;font-size:22px;">workload</span> and
               <span style="color:White;font-weight:bold;font-size:22px;">automation</span> of
               <span style="color:White;font-weight:bold;font-size:22px;">activities</span>
               .
-              it also assits in  
+              It also assists in the  
               <span style="color:White;font-weight:bold;font-size:22px;">elimination</span> of
               <span style="color:White;font-weight:bold;font-size:22px;">human error</span>
               , as a result, 
@@ -289,15 +291,15 @@ body {
               <br></br>
               <center><a class="neonText" style="font-size:  34px;"><span style="color:White;font-weight:Italic;font-size: 34px;">WHAT CAN I OFFER?</span></a></center>
               <a style="font-size: 18px;">
-                I can offer you a 
+                I can offer you an 
                 <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">affordable</span>
                 yet 
-                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">competitive fully customize</span>
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">competitive fully customized</span>
                 <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">software product</span> that is 
                 based 
                 on what you 
                 <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">need</span> and 
-                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">desires</span>.
+                <span class="neonText" style="color:White;font-weight:Italic;font-size:22px;">desire</span>.
                 Below are the available services that I offer.
               </a>
 
