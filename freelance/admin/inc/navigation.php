@@ -37,6 +37,17 @@
                         </p>
                       </a>
                     </li> 
+
+                             <!-- added for inquiries -->
+                    <li class="nav-item dropdown">
+                      <a href="<?php echo base_url ?>admin/?page=customer" class="nav-link nav-customer">
+                        <i class="nav-icon fas fa-user-tie"></i>
+                        <p>
+                          Customer Inquiries
+                        </p>
+                      </a>
+                    </li>
+                     <!-- added for inquiries -->
                     <li class="nav-header">Contents</li>
                     <li class="nav-item dropdown">
                       <a href="<?php echo base_url ?>admin/?page=about" class="nav-link nav-about">
