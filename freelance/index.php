@@ -513,6 +513,37 @@ body {
       </div> <!-- row End -->
    </section> <!-- Portfolio Section End-->
 
+ <style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
      <!-- About Section
    ================================================== -->
    <section id="me">
@@ -549,7 +580,7 @@ body {
             </div> <!-- end row -->
          </div> <!-- end .main-col -->
 
-                    <form action="message.php" method="POST">
+          <form action="message.php" method="POST">
               <center><h2>LEAVE A MESSAGE</h2></center>
               <label for="fname" style="color:White;">Full name</label>
               <input type="text" id="fname" name="firstname" placeholder="" required>
